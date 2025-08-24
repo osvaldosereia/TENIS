@@ -1,31 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RunTracker - Encontre o Tênis de Corrida Perfeito</title>
-    <meta name="description" content="Descubra os melhores tênis de corrida com análises detalhadas, especificações técnicas e comparações. Nike, Adidas, Asics e muito mais." />
-    <meta name="author" content="RunTracker" />
-    <meta name="keywords" content="tênis de corrida, running, Nike, Adidas, Asics, calçados esportivos, maratona, treino" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunTracker - Tênis de Corrida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <h1 class="logo">RunTracker</h1>
+                    <nav class="nav">
+                        <button class="btn btn--outline" onclick="navigateToHome()">Início</button>
+                        <button class="btn btn--outline" onclick="navigateToAdmin()">Admin</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="RunTracker - Encontre o Tênis de Corrida Perfeito" />
-    <meta property="og:description" content="Descubra os melhores tênis de corrida com análises detalhadas, especificações técnicas e comparações." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Filters Sidebar -->
+    <aside class="filters-sidebar" id="filtersSidebar">
+        <div class="filters-header">
+            <h3>Filtros</h3>
+            <button class="btn btn--sm btn--outline" onclick="clearAllFilters()">Limpar</button>
+        </div>
+        
+        <div class="filter-group">
+            <label class="form-label">Buscar</label>
+            <input type="text" class="form-control" id="searchInput" placeholder="Digite o nome do tênis..." oninput="applyFilters()">
+        </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@runtracker" />
-    <meta name="twitter:title" content="RunTracker - Encontre o Tênis de Corrida Perfeito" />
-    <meta name="twitter:description" content="Descubra os melhores tênis de corrida com análises detalhadas e especificações técnicas." />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <div class="filter-group">
+            <label class="form-label">Marcas</label>
+            <div class="brand-list" id="brandList">
+                <div class="brand-item">
+                    <input type="radio" id="brand-all" name="brand" value="" checked onchange="applyFilters()">
+                    <label for="brand-all">Todas as marcas</label>
+                </div>
+                <div class="brand-item">
+                    <input type="radio" id="brand-nike" name="brand" value="Nike" onchange="applyFilters()">
+                    <label for="brand-nike">Nike</label>
+                </div>
+                <div class="brand-item">
+                    <input type="radio" id="brand-adidas" name="brand" value="Adidas" onchange="applyFilters()">
+                    <label for="brand-adidas">Adidas</label>
+                </div>
+                <div class="brand-item">
+                    <input type="radio" id="brand-asics" name="brand" value="Asics" onchange="applyFilters()">
+                    <label for="brand-asics">Asics</label>
+                </div>
+            </div>
+        </div>
+    </aside>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="products-container">
+            <!-- Filters Toggle (Mobile) -->
+            <div class="filters-toggle">
+                <button class="btn btn--secondary" onclick="toggleFilters()">
+                    <span>Filtros</span>
+                </button>
+            </div>
+
+            <!-- Results Header -->
+            <div class="results-header">
+                <h2 id="resultsTitle">Tênis de Corrida Mais Recentes</h2>
+                <p id="resultsCount">Carregando produtos...</p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Produtos serão carregados aqui -->
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+            loadProducts();
+        });
+    </script>
+</body>
 </html>
