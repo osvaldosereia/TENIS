@@ -1,18 +1,41 @@
 // Product data - EDITE ESTE ARRAY PARA ADICIONAR NOVOS PRODUTOS
 // AGORA O CAMPO "review" ACEITA HTML BÁSICO!
+
 const products = [
     {
         "id": 1,
         "name": "Air Zoom Pegasus 40",
         "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
         "images": [
             "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
             "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80",
-            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80"
+            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
+            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
+            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80",
+            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80"
         ],
-        "buyLink": "https://nike.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
+        "youtubeReviews": [
+            { "name": "Canal do Corredor", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Tênis e Corrida", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Running Brasil", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Maratona Review", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Correr é Vida", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" }
+        ],
+        "siteReviews": [
+            { "name": "RunnerWorld BR", "url": "https://runnersworld.com.br" },
+            { "name": "O2 Por Minuto", "url": "https://o2porminuto.com.br" },
+            { "name": "Ativo", "url": "https://ativo.com" },
+            { "name": "EuAtleta", "url": "https://euatleta.globo.com" },
+            { "name": "Tênis Certo", "url": "https://teniscerto.com.br" }
+        ],
+        "buyLinks": [
+            { "name": "Nike Oficial", "url": "https://nike.com.br" },
+            { "name": "Netshoes", "url": "https://netshoes.com.br" },
+            { "name": "Centauro", "url": "https://centauro.com.br" },
+            { "name": "Amazon", "url": "https://amazon.com.br" },
+            { "name": "Dafiti", "url": "https://dafiti.com.br" }
+        ],
         "review": "O <strong style='color: #2563eb;'>Nike Air Zoom Pegasus 40</strong> é um tênis versátil e confortável, ideal para corredores de todos os níveis.<br><br><span style='background: #fef3c7; padding: 4px 8px; border-radius: 4px; font-weight: bold;'>✨ Principais Características:</span><br>• <strong>Entressola responsiva</strong> com tecnologia Zoom Air<br>• <strong style='color: #059669;'>Cabedal respirável</strong> em mesh engineered<br>• <strong>Tração excepcional</strong> em diversas superfícies<br><br><em style='color: #7c3aed; font-weight: 600;'>💡 Ideal para treinos diários e corridas de longa distância!</em>",
         "dateAdded": "2025-08-20",
         "views": 45
@@ -21,15 +44,37 @@ const products = [
         "id": 2,
         "name": "Ultraboost 22",
         "brand": "Adidas",
-        "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
         "images": [
             "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
             "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80",
-            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80"
+            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
+            "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80",
+            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80"
         ],
-        "buyLink": "https://adidas.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #dc2626;'>Adidas Ultraboost 22</strong> representa o ápice da tecnologia em tênis de corrida.<br><br><span style='background: #dbeafe; padding: 8px; border-left: 4px solid #3b82f6; display: block; margin: 16px 0;'>🚀 <strong>Tecnologia Boost:</strong> Amortecimento excepcional e retorno de energia incomparável</span><br><strong style='color: #059669;'>Especificações Premium:</strong><br>• <strong>Cabedal:</strong> Primeknit+ adaptativo<br>• <strong>Sola:</strong> Continental para aderência superior<br>• <strong style='color: #ea580c;'>Tecnologia:</strong> Linear Energy Push<br><br><em style='color: #7c3aed;'>👨‍🏃 Escolha dos profissionais e entusiastas!</em>",
+        "youtubeReviews": [
+            { "name": "Adidas Review BR", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Ultra Running", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Boost Test", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Tênis Pro", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Running Expert", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" }
+        ],
+        "siteReviews": [
+            { "name": "Solereview", "url": "https://solereview.com" },
+            { "name": "Running Magazine", "url": "https://runningmagazine.com" },
+            { "name": "Footwear News", "url": "https://footwearnews.com" },
+            { "name": "Believe in the Run", "url": "https://believeintherun.com" },
+            { "name": "Runners Need", "url": "https://runnersneed.com" }
+        ],
+        "buyLinks": [
+            { "name": "Adidas Oficial", "url": "https://adidas.com.br" },
+            { "name": "Netshoes", "url": "https://netshoes.com.br" },
+            { "name": "Centauro", "url": "https://centauro.com.br" },
+            { "name": "Decathlon", "url": "https://decathlon.com.br" },
+            { "name": "Kanui", "url": "https://kanui.com.br" }
+        ],
+        "review": "O <strong>Adidas Ultraboost 22</strong> representa o ápice da tecnologia em tênis de corrida.<br><br><strong>Tecnologia Boost:</strong> Amortecimento excepcional e retorno de energia incomparável<br><br><strong>Especificações Premium:</strong><br>• <strong>Cabedal:</strong> Primeknit+ adaptativo<br>• <strong>Sola:</strong> Continental para aderência superior<br>• <strong>Tecnologia:</strong> Linear Energy Push<br><br><em>👨‍🏃 Escolha dos profissionais e entusiastas!</em>",
         "dateAdded": "2025-08-18",
         "views": 62
     },
@@ -37,83 +82,41 @@ const products = [
         "id": 3,
         "name": "Gel-Nimbus 25",
         "brand": "Asics",
-        "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80",
         "images": [
             "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80",
             "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
-            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80"
+            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
+            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
+            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80",
+            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80"
         ],
-        "buyLink": "https://asics.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #7c3aed;'>Asics Gel-Nimbus 25</strong> é projetado para oferecer máximo conforto em longas distâncias.<br><br><span style='background: #f3e8ff; padding: 8px; border-radius: 8px; display: block; margin: 16px 0;'>💎 <strong>Tecnologias Principais:</strong><br>🛡️ <strong style='color: #c2410c;'>GEL Technology</strong> - Absorção de impacto superior<br>🪶 <strong style='color: #166534;'>FlyteFoam</strong> - Leveza sem comprometer amortecimento</span><br><strong style='color: #0891b2;'>🌟 Destaques do Modelo:</strong><br>• Cabedal em mesh macio para ajuste confortável<br>• Nova geometria para transições mais suaves<br>• <strong style='color: #dc2626;'>Detalhes refletivos</strong> para visibilidade noturna<br><br><em style='color: #059669; font-weight: 600;'>🎯 Ideal para corredores que priorizam conforto e proteção!</em>",
+        "youtubeReviews": [
+            { "name": "Asics Brasil", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Gel Technology", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Nimbus Review", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Long Distance BR", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" },
+            { "name": "Asics Test", "url": "https://youtube.com/watch?v=dQw4w9WgXcQ" }
+        ],
+        "siteReviews": [
+            { "name": "Asics Running", "url": "https://asics.com/running" },
+            { "name": "Gear Junkie", "url": "https://gearjunkie.com" },
+            { "name": "Outside Magazine", "url": "https://outsideonline.com" },
+            { "name": "Runner Click", "url": "https://runnerclick.com" },
+            { "name": "The Running Clinic", "url": "https://therunningclinic.com" }
+        ],
+        "buyLinks": [
+            { "name": "Asics Oficial", "url": "https://asics.com.br" },
+            { "name": "Centauro", "url": "https://centauro.com.br" },
+            { "name": "Netshoes", "url": "https://netshoes.com.br" },
+            { "name": "Sport Zone", "url": "https://sportzone.com.br" },
+            { "name": "Authentic Feet", "url": "https://authenticfeet.com.br" }
+        ],
+        "review": "O <strong>Asics Gel-Nimbus 25</strong> é projetado para oferecer máximo conforto em longas distâncias.<br><br><strong>Tecnologias Principais:</strong><br>🛡️ <strong>GEL Technology</strong> - Absorção de impacto superior<br>• <strong>FlyteFoam</strong> - Leveza sem comprometer amortecimento<br><br><strong>🌟 Destaques do Modelo:</strong><br>• Cabedal em mesh macio para ajuste confortável<br>• Nova geometria para transições mais suaves<br>• <strong>Detalhes refletivos</strong> para visibilidade noturna<br><br><em>🎯 Ideal para corredores que priorizam conforto e proteção!</em>",
         "dateAdded": "2025-08-15",
         "views": 38
-    },
-    {
-        "id": 4,
-        "name": "Fresh Foam X 1080v12",
-        "brand": "New Balance",
-        "image": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&q=80",
-        "images": [
-            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80",
-            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80",
-            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80"
-        ],
-        "buyLink": "https://newbalance.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #059669;'>New Balance Fresh Foam X 1080v12</strong> combina amortecimento macio com responsividade.<br><br><span style='background: #ecfdf5; padding: 8px; border-left: 4px solid #10b981; display: block; margin: 16px 0;'>🚀 <strong>Fresh Foam X:</strong> Sensação suave e confortável a cada passada</span><br><strong style='color: #ea580c;'>Características Técnicas:</strong><br>• <strong>Drop:</strong> 8mm para equilíbrio perfeito<br>• <strong style='color: #7c3aed;'>Construção:</strong> Sem costura para máximo conforto<br>• <strong>Design:</strong> Moderno com funcionalidade<br><br><em style='color: #dc2626; font-weight: 600;'>💡 Versátil para iniciantes e experientes!</em>",
-        "dateAdded": "2025-08-22",
-        "views": 29
-    },
-    {
-        "id": 5,
-        "name": "React Infinity Run 3",
-        "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400&q=80",
-        "images": [
-            "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=600&q=80",
-            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80",
-            "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&q=80"
-        ],
-        "buyLink": "https://nike.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #2563eb;'>Nike React Infinity Run 3</strong> foi desenvolvido para reduzir lesões e proporcionar suporte contínuo.<br><br><span style='background: #fef2f2; padding: 8px; border-left: 4px solid #ef4444; display: block; margin: 16px 0;'>🛡️ <strong>Foco na Proteção:</strong> Design ampliado da base para estabilidade extra</span><br><strong style='color: #7c3aed;'>Tecnologias Nike:</strong><br>• <strong style='color: #059669;'>Nike React:</strong> Amortecimento responsivo e durável<br>• <strong>Flyknit:</strong> Ajuste personalizado<br>• <strong style='color: #ea580c;'>Geometria especial:</strong> Reduz rotação do pé<br><br><em style='color: #166534; font-weight: 600;'>🏃‍♂️ Evolução para corredores que priorizam segurança!</em>",
-        "dateAdded": "2025-08-19",
-        "views": 51
-    },
-    {
-        "id": 6,
-        "name": "Supernova 2.0",
-        "brand": "Adidas",
-        "image": "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=400&q=80",
-        "images": [
-            "https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=600&q=80",
-            "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80",
-            "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=600&q=80"
-        ],
-        "buyLink": "https://adidas.com",
-        "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #dc2626;'>Adidas Supernova 2.0</strong> é um tênis versátil para treinos diários.<br><br><span style='background: #fff7ed; padding: 8px; border-radius: 8px; display: block; margin: 16px 0;'>⚡ <strong style='color: #ea580c;'>Amortecimento Bounce:</strong> Energia e conforto a cada passada</span><br><strong style='color: #059669;'>Construção Durável:</strong><br>• <strong>Cabedal:</strong> Mesh para respirabilidade<br>• <strong style='color: #7c3aed;'>Solado:</strong> Borracha para tração durável<br>• <strong>Design:</strong> Elementos clássicos com toques modernos<br><br><em style='color: #166534; font-weight: 600;'>💰 Excelente custo-benefício para o dia a dia!</em>",
-        "dateAdded": "2025-08-16",
-        "views": 33
-    },
-    {
-         "id": 7,
-         "name": "Adizero Drive RC",
-         "brand": "Adidas",
-         "image": "https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2025/05/20122619/Olympikus-Corre-Grafeno-3-R-79999-Drop-Aura-4-1-548x365.jpg?w=400&q=80",
-         "images": [
-             "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html?w=600&q=80",
-             "https://www.decathlon.com.br/tenis-de-corrida-mulher-adizero-drive-rc-/p?w=600&q=80",
-             "https://www.procorrer.com.br/produtos/tenis-adidas-adizero-drive-rc-masculino-azul/?w=600&q=80"
-         ],
-        "buyLink": "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html",
-        "youtubeLink": "https://www.youtube.com/watch?v=noZhW7WvWtU",
-        "review": "<strong style='color:#111;'>Adizero Drive RC</strong><br>\n<em style='color:#555;'>Perfil: corrida leve e treino de ritmo</em><br><br>\n\n<span style='background:#e6f4ff;padding:4px 8px;border-radius:4px;font-weight:700;'>⚙️ Plataforma</span><br>\n• <strong>Entressola:</strong> EVA Lightstrike + hastes Energy Rods 2.0, com boa resposta e transição energizada<br>\n• <strong>Altura/Drop:</strong> stack traseiro ~38 mm; drop ~6,5 mm<br>\n• <strong>Peso:</strong> cerca de 225 g (tamanho de referência não especificado)<br><br>\n\n<span style='background:#fff7e6;padding:4px 8px;border-radius:4px;font-weight:700;'>👟 Cabedal & Ajuste</span><br>\n• <strong>Materiais:</strong> mesh respirável com sobreposições plásticas; bom suporte médio-pé<br>\n• <strong>Ajuste:</strong> forma justa (snug); calcanhar firme com contraforte rígido; bom travamento no médio-pé<br>\n• <strong>Numeração:</strong> fiel ao tamanho padrão<br><br>\n\n<span style='background:#f3e8ff;padding:4px 8px;border-radius:4px;font-weight:700;'>🛣️ Sola & Durabilidade</span><br>\n• <strong>Tração:</strong> adequada para asfalto seco; borracha Adiwear durável<br>\n• <strong>Borracha:</strong> Adiwear resistente; <strong>Durabilidade:</strong> estimativa superior a 300 km de uso<br><br>\n\n<span style='background:#e8fff3;padding:4px 8px;border-radius:4px;font-weight:700;'>🏃 Uso recomendado</span><br>\n• <strong>Ritmos:</strong> moderado a progressivo, ideal para treinos de ritmo e meia maratona<br>\n• <strong>Distâncias:</strong> de 10 K a meia maratona, uso diário leve também possível<br>\n• <strong>Pisada/Suporte:</strong> neutra, com estabilidade moderada por rigidez da entressola<br><br>\n\n<span style='background:#fff0f0;padding:4px 8px;border-radius:4px;font-weight:700;'>✅ Prós</span><br>\n• Leve e com boa resposta devido à entressola e hastes rígidas<br>\n• Estável para um “racing flat” graças à entressola firme e contraforte<br>\n• Alta durabilidade de sola, incomum em tênis desse perfil<br><br>\n\n<span style='background:#f0f0f0;padding:4px 8px;border-radius:4px;font-weight:700;'>⚠️ Contras</span><br>\n• Contraforte elevado e rígido pode incomodar calcanhares sensíveis<br>\n• Amortecimento firme não é o mais macio para treinos longos muito confortáveis<br><br>\n\n<em style='color:#0f766e;font-weight:600;'>💡 Ideal para: corredores que buscam um tênis leve e responsivo para treinos mais rápidos e corridas de até meia maratona com estabilidade.</em><br>\n<em style='color:#7c3aed;font-weight:600;'>🚫 Evite se você precisa de: amortecimento macio e conforto em treinos longos para quem tem calcanhar sensível.</em>",
-        "dateAdded": "2025-08-24",
-        "views": 0
-   }
-   ];
+    }
+];
 
 // Global variables
 let filteredProducts = [...products];
@@ -155,7 +158,6 @@ function setupEventListeners() {
             handleSearch();
         }
     });
-
     brandFilter.addEventListener('change', filterProducts);
     sortFilter.addEventListener('change', sortProducts);
 }
@@ -195,10 +197,9 @@ function filterProducts() {
     const selectedBrand = brandFilter ? brandFilter.value : '';
 
     filteredProducts = products.filter(product => {
-        const matchesSearch = product.name.toLowerCase().includes(searchTerm) || 
+        const matchesSearch = product.name.toLowerCase().includes(searchTerm) ||
                             product.brand.toLowerCase().includes(searchTerm);
         const matchesBrand = !selectedBrand || product.brand === selectedBrand;
-
         return matchesSearch && matchesBrand;
     });
 
@@ -240,29 +241,22 @@ function renderProducts() {
     noResults.classList.add('hidden');
 
     productsGrid.innerHTML = filteredProducts.map(product => `
-        <div class="product-card fade-in" onclick="goToProduct(${product.id})">
+        <div class="product-card" onclick="openProduct(${product.id})">
             <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <div class="product-brand">${product.brand}</div>
-                <button class="btn-primary">VER</button>
+                <button class="btn-primary">Ver Detalhes</button>
             </div>
         </div>
     `).join('');
 }
 
-function goToProduct(productId) {
-    // Increment views
-    const product = products.find(p => p.id === productId);
-    if (product) {
-        product.views++;
-    }
-
-    // Navigate to product page
+function openProduct(productId) {
     window.location.href = `product.html?id=${productId}`;
 }
 
-// Product page functions
+// Nova função showProductDetails otimizada para o novo layout
 function showProductDetails(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) {
@@ -280,88 +274,107 @@ function showProductDetails(productId) {
     const whatsappUrl = `https://wa.me/?text=${whatsappMessage}`;
 
     container.innerHTML = `
-        <div class="product-gallery">
-            <div class="main-image-container">
+        <div class="product-header">
+            <div class="product-main-image">
                 <img src="${product.images[0]}" alt="${product.name}" class="main-image" id="mainImage">
+                <button class="whatsapp-share-btn" onclick="window.open('${whatsappUrl}', '_blank')" title="Compartilhar no WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </button>
             </div>
-            <div class="thumbnail-container">
+            
+            <div class="image-gallery">
                 ${product.images.map((img, index) => `
-                    <img src="${img}" alt="${product.name}" class="thumbnail ${index === 0 ? 'active' : ''}" 
+                    <img src="${img}" alt="${product.name}" class="gallery-thumb ${index === 0 ? 'active' : ''}" 
                          onclick="changeMainImage('${img}', ${index})">
                 `).join('')}
             </div>
         </div>
 
-        <div class="product-details">
-            <h1>${product.name}</h1>
-            <div class="product-brand">${product.brand}</div>
+        <div class="product-info-section">
+            <h1 class="product-title">${product.name}</h1>
+            <div class="product-brand-badge">${product.brand}</div>
+        </div>
 
-            <div class="product-actions">
-                <a href="${product.buyLink}" class="action-btn btn-buy" target="_blank" rel="noopener" title="Comprar">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <a href="${product.youtubeLink}" class="action-btn btn-youtube" target="_blank" rel="noopener" title="Ver Review">
+        <div class="links-section">
+            <div class="links-group">
+                <h3 class="links-title">
                     <i class="fab fa-youtube"></i>
-                </a>
-                <a href="${whatsappUrl}" class="action-btn btn-whatsapp" target="_blank" rel="noopener" title="Compartilhar">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                    Reviews do YouTube
+                </h3>
+                <div class="links-list">
+                    ${product.youtubeReviews.map(link => `
+                        <div class="link-item">
+                            <span class="link-name">${link.name}</span>
+                            <a href="${link.url}" class="link-btn" target="_blank" rel="noopener" title="Abrir">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
 
-            <div class="product-review">
-                <h3>Review Completo</h3>
-                <div class="review-content">${product.review}</div>
+            <div class="links-group">
+                <h3 class="links-title">
+                    <i class="fas fa-globe"></i>
+                    Reviews Sites Especializados
+                </h3>
+                <div class="links-list">
+                    ${product.siteReviews.map(link => `
+                        <div class="link-item">
+                            <span class="link-name">${link.name}</span>
+                            <a href="${link.url}" class="link-btn" target="_blank" rel="noopener" title="Abrir">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
+
+            <div class="links-group">
+                <h3 class="links-title">
+                    <i class="fas fa-shopping-cart"></i>
+                    Comprar
+                </h3>
+                <div class="links-list">
+                    ${product.buyLinks.map(link => `
+                        <div class="link-item">
+                            <span class="link-name">${link.name}</span>
+                            <a href="${link.url}" class="link-btn" target="_blank" rel="noopener" title="Abrir">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+
+        <div class="product-review">
+            <h3>Review Completo</h3>
+            <div class="review-content">${product.review}</div>
         </div>
     `;
 
     // Add fade-in animation
     container.classList.add('fade-in');
+    
+    // Increment views
+    product.views += 1;
 }
 
 function changeMainImage(imageSrc, index) {
     const mainImage = document.getElementById('mainImage');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-
+    const thumbnails = document.querySelectorAll('.gallery-thumb');
+    
     if (mainImage) {
         mainImage.src = imageSrc;
     }
-
+    
     // Update active thumbnail
     thumbnails.forEach((thumb, i) => {
-        thumb.classList.toggle('active', i === index);
-    });
-}
-
-// Utility functions
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Performance optimization: lazy loading images
-if ('IntersectionObserver' in window) {
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
-    // Observe all lazy images
-    document.addEventListener('DOMContentLoaded', function() {
-        const lazyImages = document.querySelectorAll('img[data-src]');
-        lazyImages.forEach(img => imageObserver.observe(img));
+        if (i === index) {
+            thumb.classList.add('active');
+        } else {
+            thumb.classList.remove('active');
+        }
     });
 }
