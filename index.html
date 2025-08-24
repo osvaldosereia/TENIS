@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VELOZ - Tênis de Corrida</title>
+    <title>VELOZ - Catálogo de Tênis de Corrida</title>
+    <meta name="description" content="Catálogo completo de tênis de corrida com reviews detalhados e comparações.">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,42 +19,39 @@
             <h1 class="logo">VELOZ</h1>
             <div class="header-spacer"></div>
         </div>
-
-        <!-- Mobile Menu -->
-        <nav class="mobile-menu hidden" id="mobileMenu">
-            <div class="mobile-menu-content">
-                <button class="menu-close" id="menuClose">
-                    <i class="fas fa-times"></i>
-                </button>
-                <ul class="menu-list">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="#marcas">Marcas</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
-    <!-- Home Page -->
-    <main class="main" id="homePage">
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="menu-close" id="menuClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="index.html">🏠 Início</a></li>
+                    <li><a href="#search">🔍 Buscar Tênis</a></li>
+                    <li><a href="#brands">👟 Marcas</a></li>
+                    <li><a href="#about">ℹ️ Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
         <div class="container">
-            <!-- Search and Filters -->
-            <div class="search-section">
+            <!-- Search Section -->
+            <section class="search-section" id="search">
                 <div class="search-container">
-                    <input 
-                        type="text" 
-                        id="searchInput" 
-                        class="search-input form-control" 
-                        placeholder="Buscar tênis..."
-                    >
+                    <input type="text" class="search-input" id="searchInput" placeholder="Buscar tênis ou marca...">
                     <button class="search-btn" id="searchBtn">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
-
+                
                 <div class="filter-controls">
-                    <select id="brandFilter" class="form-control">
+                    <select class="form-control" id="brandFilter">
                         <option value="">Todas as marcas</option>
                         <option value="Nike">Nike</option>
                         <option value="Adidas">Adidas</option>
@@ -63,24 +61,26 @@
                         <option value="Mizuno">Mizuno</option>
                         <option value="Saucony">Saucony</option>
                     </select>
-
-                    <select id="sortFilter" class="form-control">
+                    
+                    <select class="form-control" id="sortFilter">
                         <option value="recent">Mais Recentes</option>
                         <option value="views">Mais Vistos</option>
                         <option value="name">Nome A-Z</option>
                     </select>
                 </div>
-            </div>
+            </section>
 
             <!-- Products Grid -->
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be loaded here by JavaScript -->
-            </div>
-
-            <!-- No results message -->
-            <div class="no-results hidden" id="noResults">
-                <p>Nenhum tênis encontrado com os critérios selecionados.</p>
-            </div>
+            <section class="products-section">
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded here by JavaScript -->
+                </div>
+                
+                <div class="no-results hidden" id="noResults">
+                    <p>Nenhum tênis encontrado com os filtros selecionados.</p>
+                    <p>Tente ajustar sua busca ou escolher outra marca.</p>
+                </div>
+            </section>
         </div>
     </main>
 
