@@ -98,10 +98,10 @@ const products = [
         "views": 33
     },
     {
-"id": null,
+"id": 7,
 "name": "Adizero Drive RC",
 "brand": "Adidas",
-"image": "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html?w=400&q=80",
+"image": "https://s3.sa-east-1.amazonaws.com/static.activodeporte.com/brasil/uploads/2025/05/20122619/Olympikus-Corre-Grafeno-3-R-79999-Drop-Aura-4-1-548x365.jpg?w=400&q=80",
 "images": [
 "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html?w=600&q=80",
 "https://www.decathlon.com.br/tenis-de-corrida-mulher-adizero-drive-rc-/p?w=600&q=80",
