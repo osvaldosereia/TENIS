@@ -96,7 +96,23 @@ const products = [
         "review": "O <strong style='color: #dc2626;'>Adidas Supernova 2.0</strong> é um tênis versátil para treinos diários.<br><br><span style='background: #fff7ed; padding: 8px; border-radius: 8px; display: block; margin: 16px 0;'>⚡ <strong style='color: #ea580c;'>Amortecimento Bounce:</strong> Energia e conforto a cada passada</span><br><strong style='color: #059669;'>Construção Durável:</strong><br>• <strong>Cabedal:</strong> Mesh para respirabilidade<br>• <strong style='color: #7c3aed;'>Solado:</strong> Borracha para tração durável<br>• <strong>Design:</strong> Elementos clássicos com toques modernos<br><br><em style='color: #166534; font-weight: 600;'>💰 Excelente custo-benefício para o dia a dia!</em>",
         "dateAdded": "2025-08-16",
         "views": 33
-    }
+    },
+    {
+"id": null,
+"name": "Adizero Drive RC",
+"brand": "Adidas",
+"image": "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html?w=400&q=80",
+"images": [
+"https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html?w=600&q=80",
+"https://www.decathlon.com.br/tenis-de-corrida-mulher-adizero-drive-rc-/p?w=600&q=80",
+"https://www.procorrer.com.br/produtos/tenis-adidas-adizero-drive-rc-masculino-azul/?w=600&q=80"
+],
+"buyLink": "https://www.adidas.com.br/tenis-adizero-drive-rc/JH5694.html",
+"youtubeLink": "https://www.youtube.com/watch?v=noZhW7WvWtU",
+"review": "<strong style='color:#111;'>Adizero Drive RC</strong><br>\n<em style='color:#555;'>Perfil: corrida leve e treino de ritmo</em><br><br>\n\n<span style='background:#e6f4ff;padding:4px 8px;border-radius:4px;font-weight:700;'>⚙️ Plataforma</span><br>\n• <strong>Entressola:</strong> EVA Lightstrike + hastes Energy Rods 2.0, com boa resposta e transição energizada<br>\n• <strong>Altura/Drop:</strong> stack traseiro ~38 mm; drop ~6,5 mm<br>\n• <strong>Peso:</strong> cerca de 225 g (tamanho de referência não especificado)<br><br>\n\n<span style='background:#fff7e6;padding:4px 8px;border-radius:4px;font-weight:700;'>👟 Cabedal & Ajuste</span><br>\n• <strong>Materiais:</strong> mesh respirável com sobreposições plásticas; bom suporte médio-pé<br>\n• <strong>Ajuste:</strong> forma justa (snug); calcanhar firme com contraforte rígido; bom travamento no médio-pé<br>\n• <strong>Numeração:</strong> fiel ao tamanho padrão<br><br>\n\n<span style='background:#f3e8ff;padding:4px 8px;border-radius:4px;font-weight:700;'>🛣️ Sola & Durabilidade</span><br>\n• <strong>Tração:</strong> adequada para asfalto seco; borracha Adiwear durável<br>\n• <strong>Borracha:</strong> Adiwear resistente; <strong>Durabilidade:</strong> estimativa superior a 300 km de uso<br><br>\n\n<span style='background:#e8fff3;padding:4px 8px;border-radius:4px;font-weight:700;'>🏃 Uso recomendado</span><br>\n• <strong>Ritmos:</strong> moderado a progressivo, ideal para treinos de ritmo e meia maratona<br>\n• <strong>Distâncias:</strong> de 10 K a meia maratona, uso diário leve também possível<br>\n• <strong>Pisada/Suporte:</strong> neutra, com estabilidade moderada por rigidez da entressola<br><br>\n\n<span style='background:#fff0f0;padding:4px 8px;border-radius:4px;font-weight:700;'>✅ Prós</span><br>\n• Leve e com boa resposta devido à entressola e hastes rígidas<br>\n• Estável para um “racing flat” graças à entressola firme e contraforte<br>\n• Alta durabilidade de sola, incomum em tênis desse perfil<br><br>\n\n<span style='background:#f0f0f0;padding:4px 8px;border-radius:4px;font-weight:700;'>⚠️ Contras</span><br>\n• Contraforte elevado e rígido pode incomodar calcanhares sensíveis<br>\n• Amortecimento firme não é o mais macio para treinos longos muito confortáveis<br><br>\n\n<em style='color:#0f766e;font-weight:600;'>💡 Ideal para: corredores que buscam um tênis leve e responsivo para treinos mais rápidos e corridas de até meia maratona com estabilidade.</em><br>\n<em style='color:#7c3aed;font-weight:600;'>🚫 Evite se você precisa de: amortecimento macio e conforto em treinos longos para quem tem calcanhar sensível.</em>",
+"dateAdded": "2025-08-24",
+"views": 0
+}
 ];
 
 // Global variables
