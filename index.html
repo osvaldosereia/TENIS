@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOZ - Tênis de Corrida</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="logo">VELOZ</h1>
+            <div class="header-spacer"></div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu hidden" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <button class="menu-close" id="menuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu-list">
+                    <li><a href="#" onclick="showHomePage()">Início</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <main class="main" id="homePage">
+        <div class="container">
+            <!-- Search and Filters -->
+            <div class="search-section">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input form-control" 
+                        placeholder="Buscar tênis..."
+                    >
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-controls">
+                    <select id="brandFilter" class="form-control">
+                        <option value="">Todas as marcas</option>
+                        <option value="Nike">Nike</option>
+                        <option value="Adidas">Adidas</option>
+                        <option value="Asics">Asics</option>
+                        <option value="New Balance">New Balance</option>
+                    </select>
+                    
+                    <select id="sortFilter" class="form-control">
+                        <option value="recent">Mais Recentes</option>
+                        <option value="views">Mais Vistos</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+
+            <!-- No results message -->
+            <div class="no-results hidden" id="noResults">
+                <p>Nenhum tênis encontrado com os filtros aplicados.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Product Page -->
+    <main class="main hidden" id="productPage">
+        <div class="container">
+            <!-- Back Button -->
+            <div class="back-nav">
+                <button class="back-btn" onclick="showHomePage()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h2 class="page-logo">VELOZ</h2>
+            </div>
+
+            <div class="product-details">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="" class="gallery-main">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img class="thumbnail active" data-index="0" src="" alt="">
+                        <img class="thumbnail" data-index="1" src="" alt="">
+                        <img class="thumbnail" data-index="2" src="" alt="">
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-name" id="productName"></h1>
+                    <p class="product-brand" id="productBrand"></p>
+                    
+                    <!-- Action Buttons - Small with icons only -->
+                    <div class="action-buttons">
+                        <button id="buyButton" class="action-btn buy-btn" title="Comprar">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                        <button id="reviewButton" class="action-btn review-btn" title="Ver Review">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="shareButton" class="action-btn share-btn" title="Compartilhar">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Product Review -->
+                    <div class="product-review">
+                        <h3>Review Completo</h3>
+                        <p id="reviewText"></p>
+                    </div>
+
+                    <!-- Product Navigation -->
+                    <div class="product-navigation">
+                        <button id="prevProduct" class="nav-btn" title="Produto Anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button id="nextProduct" class="nav-btn" title="Próximo Produto">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">VELOZ</div>
+                <p>&copy; 2025 VELOZ. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
