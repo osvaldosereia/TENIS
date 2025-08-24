@@ -13,7 +13,7 @@ const products = [
         ],
         "buyLink": "https://nike.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O <strong style='color: #2563eb;'>Nike Air Zoom Pegasus 40</strong> é um tênis versátil e confortável, ideal para corredores de todos os níveis.<br><br><span style='background: #fef3c7; padding: 4px 8px; border-radius: 4px; font-weight: bold;'>✨ Principais Características:</span><br>• <strong>Entressola responsiva</strong> com tecnologia Zoom Air<br>• <strong style='color: #059669;'>Cabedal respirável</strong> em mesh engineered<br>• <strong>Tração excepcional</strong> em diversas superfícies<br><br><em style='color: #7c3aed; font-weight: 600;'>💡 Ideal para treinos diários e corridas de longa distância!</em>",
+        "review": "O <strong style='color: #2563eb;'>Nike Air Max</strong> é ideal para corridas.<br><br>✨ <strong>Características:</strong><br>• <strong>Conforto:</strong> Excelente<br>• <strong style='color: #059669;'>Durabilidade:</strong> Superior<br><br><em style='color: #7c3aed;'>🎯 Recomendado para todos!</em>"
         "dateAdded": "2025-08-20",
         "views": 45
     },
