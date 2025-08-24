@@ -1,4 +1,5 @@
 // Product data - EDITE ESTE ARRAY PARA ADICIONAR NOVOS PRODUTOS
+// AGORA O CAMPO "review" ACEITA HTML BÁSICO!
 const products = [
     {
         "id": 1,
@@ -12,7 +13,7 @@ const products = [
         ],
         "buyLink": "https://nike.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O Nike Air Zoom Pegasus 40 é um tênis versátil e confortável, ideal para corredores de todos os níveis. Com sua entressola responsiva e cabedal respirável, oferece o equilíbrio perfeito entre conforto e performance. A tecnologia Zoom Air no antepé proporciona retorno de energia a cada passada, enquanto o design clássico garante durabilidade para treinos diários. O cabedal em mesh engineered garante ventilação superior, mantendo os pés secos durante longos treinos. A sola de borracha oferece tração excepcional em diversas superfícies, proporcionando confiança a cada pisada. Este modelo se destaca pela versatilidade, sendo adequado tanto para treinos intervalados quanto para corridas de longa distância.",
+        "review": "O <strong style='color: #2563eb;'>Nike Air Zoom Pegasus 40</strong> é um tênis versátil e confortável, ideal para corredores de todos os níveis.<br><br><span style='background: #fef3c7; padding: 4px 8px; border-radius: 4px; font-weight: bold;'>✨ Principais Características:</span><br>• <strong>Entressola responsiva</strong> com tecnologia Zoom Air<br>• <strong style='color: #059669;'>Cabedal respirável</strong> em mesh engineered<br>• <strong>Tração excepcional</strong> em diversas superfícies<br><br><em style='color: #7c3aed; font-weight: 600;'>💡 Ideal para treinos diários e corridas de longa distância!</em>",
         "dateAdded": "2025-08-20",
         "views": 45
     },
@@ -28,7 +29,7 @@ const products = [
         ],
         "buyLink": "https://adidas.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O Adidas Ultraboost 22 representa o ápice da tecnologia em tênis de corrida. Sua entressola Boost oferece amortecimento excepcional e retorno de energia incomparável. O cabedal Primeknit+ se adapta perfeitamente ao pé, proporcionando suporte e respirabilidade. Ideal para longas distâncias e corredores que buscam máximo conforto. A tecnologia Linear Energy Push aumenta a rigidez do antepé, otimizando a transição e impulsão. O sistema de cordões integrado garante ajuste personalizado e seguro. A sola Continental oferece aderência superior em condições secas e molhadas, inspirada nos pneus de alta performance. Este tênis é a escolha preferida de atletas profissionais e entusiastas que não abrem mão do máximo conforto e tecnologia.",
+        "review": "O <strong style='color: #dc2626;'>Adidas Ultraboost 22</strong> representa o ápice da tecnologia em tênis de corrida.<br><br><span style='background: #dbeafe; padding: 8px; border-left: 4px solid #3b82f6; display: block; margin: 16px 0;'>🚀 <strong>Tecnologia Boost:</strong> Amortecimento excepcional e retorno de energia incomparável</span><br><strong style='color: #059669;'>Especificações Premium:</strong><br>• <strong>Cabedal:</strong> Primeknit+ adaptativo<br>• <strong>Sola:</strong> Continental para aderência superior<br>• <strong style='color: #ea580c;'>Tecnologia:</strong> Linear Energy Push<br><br><em style='color: #7c3aed;'>👨‍🏃 Escolha dos profissionais e entusiastas!</em>",
         "dateAdded": "2025-08-18",
         "views": 62
     },
@@ -44,7 +45,7 @@ const products = [
         ],
         "buyLink": "https://asics.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O Asics Gel-Nimbus 25 é projetado para oferecer máximo conforto em longas distâncias. Com tecnologia GEL no calcanhar e antepé, proporciona absorção de impacto superior. A entressola FlyteFoam oferece leveza sem comprometer o amortecimento. Perfeito para corredores que priorizam conforto e proteção contra impactos. O cabedal em mesh macio garante ajuste confortável e ventilação adequada. A nova geometria da entressola promove transições mais suaves durante a corrida. O design atualizado inclui detalhes refletivos para maior visibilidade em condições de pouca luz. A durabilidade excepcional faz deste tênis um investimento de longo prazo para corredores sérios que buscam o máximo de conforto e proteção.",
+        "review": "O <strong style='color: #7c3aed;'>Asics Gel-Nimbus 25</strong> é projetado para oferecer máximo conforto em longas distâncias.<br><br><span style='background: #f3e8ff; padding: 8px; border-radius: 8px; display: block; margin: 16px 0;'>💎 <strong>Tecnologias Principais:</strong><br>🛡️ <strong style='color: #c2410c;'>GEL Technology</strong> - Absorção de impacto superior<br>🪶 <strong style='color: #166534;'>FlyteFoam</strong> - Leveza sem comprometer amortecimento</span><br><strong style='color: #0891b2;'>🌟 Destaques do Modelo:</strong><br>• Cabedal em mesh macio para ajuste confortável<br>• Nova geometria para transições mais suaves<br>• <strong style='color: #dc2626;'>Detalhes refletivos</strong> para visibilidade noturna<br><br><em style='color: #059669; font-weight: 600;'>🎯 Ideal para corredores que priorizam conforto e proteção!</em>",
         "dateAdded": "2025-08-15",
         "views": 38
     },
@@ -60,7 +61,7 @@ const products = [
         ],
         "buyLink": "https://newbalance.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O New Balance Fresh Foam X 1080v12 combina amortecimento macio com responsividade. A tecnologia Fresh Foam X proporciona uma sensação suave e confortável a cada passada. O cabedal em mesh garante excelente respirabilidade, enquanto o design permite transições naturais do pé. Ideal para treinos diários e longas corridas. O drop de 8mm oferece equilíbrio perfeito entre amortecimento e conexão com o solo. A construção sem costura reduz pontos de atrito e aumenta o conforto geral. O design moderno combina funcionalidade com estética contemporânea. Este modelo se destaca pela versatilidade, sendo adequado tanto para corredores iniciantes quanto experientes que valorizam conforto e suavidade.",
+        "review": "O <strong style='color: #059669;'>New Balance Fresh Foam X 1080v12</strong> combina amortecimento macio com responsividade.<br><br><span style='background: #ecfdf5; padding: 8px; border-left: 4px solid #10b981; display: block; margin: 16px 0;'>🚀 <strong>Fresh Foam X:</strong> Sensação suave e confortável a cada passada</span><br><strong style='color: #ea580c;'>Características Técnicas:</strong><br>• <strong>Drop:</strong> 8mm para equilíbrio perfeito<br>• <strong style='color: #7c3aed;'>Construção:</strong> Sem costura para máximo conforto<br>• <strong>Design:</strong> Moderno com funcionalidade<br><br><em style='color: #dc2626; font-weight: 600;'>💡 Versátil para iniciantes e experientes!</em>",
         "dateAdded": "2025-08-22",
         "views": 29
     },
@@ -76,7 +77,7 @@ const products = [
         ],
         "buyLink": "https://nike.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O Nike React Infinity Run 3 foi desenvolvido para reduzir lesões e proporcionar suporte contínuo. Sua entressola Nike React oferece amortecimento responsivo e durável. O design ampliado da base proporciona estabilidade extra, enquanto o cabedal Flyknit garante ajuste personalizado. Perfeito para corredores que buscam proteção e performance. A geometria especial da sola foi projetada para reduzir a rotação excessiva do pé, diminuindo o risco de lesões. O cabedal mais respirável mantém os pés frescos durante treinos intensos. A durabilidade aprimorada da entressola garante performance consistente por milhares de quilômetros. Este tênis representa a evolução da tecnologia Nike para corredores que priorizam segurança e conforto.",
+        "review": "O <strong style='color: #2563eb;'>Nike React Infinity Run 3</strong> foi desenvolvido para reduzir lesões e proporcionar suporte contínuo.<br><br><span style='background: #fef2f2; padding: 8px; border-left: 4px solid #ef4444; display: block; margin: 16px 0;'>🛡️ <strong>Foco na Proteção:</strong> Design ampliado da base para estabilidade extra</span><br><strong style='color: #7c3aed;'>Tecnologias Nike:</strong><br>• <strong style='color: #059669;'>Nike React:</strong> Amortecimento responsivo e durável<br>• <strong>Flyknit:</strong> Ajuste personalizado<br>• <strong style='color: #ea580c;'>Geometria especial:</strong> Reduz rotação do pé<br><br><em style='color: #166534; font-weight: 600;'>🏃‍♂️ Evolução para corredores que priorizam segurança!</em>",
         "dateAdded": "2025-08-19",
         "views": 51
     },
@@ -92,7 +93,7 @@ const products = [
         ],
         "buyLink": "https://adidas.com",
         "youtubeLink": "https://youtube.com/watch?v=dQw4w9WgXcQ",
-        "review": "O Adidas Supernova 2.0 é um tênis versátil para treinos diários. Com amortecimento Bounce, oferece energia e conforto a cada passada. O cabedal em mesh proporciona respirabilidade, enquanto o solado de borracha garante tração durável. Ideal para corredores iniciantes e intermediários que buscam um tênis confiável para o dia a dia. O design renovado combina elementos clássicos com toques modernos. A construção robusta garante durabilidade excepcional para uso frequente. O ajuste confortável e seguro proporciona confiança durante toda a corrida. A relação custo-benefício excepcional faz deste modelo uma escolha inteligente para quem busca qualidade sem comprometer o orçamento.",
+        "review": "O <strong style='color: #dc2626;'>Adidas Supernova 2.0</strong> é um tênis versátil para treinos diários.<br><br><span style='background: #fff7ed; padding: 8px; border-radius: 8px; display: block; margin: 16px 0;'>⚡ <strong style='color: #ea580c;'>Amortecimento Bounce:</strong> Energia e conforto a cada passada</span><br><strong style='color: #059669;'>Construção Durável:</strong><br>• <strong>Cabedal:</strong> Mesh para respirabilidade<br>• <strong style='color: #7c3aed;'>Solado:</strong> Borracha para tração durável<br>• <strong>Design:</strong> Elementos clássicos com toques modernos<br><br><em style='color: #166534; font-weight: 600;'>💰 Excelente custo-benefício para o dia a dia!</em>",
         "dateAdded": "2025-08-16",
         "views": 33
     }
@@ -293,7 +294,7 @@ function showProductDetails(productId) {
 
             <div class="product-review">
                 <h3>Review Completo</h3>
-                <p>${product.review}</p>
+                <div class="review-content">${product.review}</div>
             </div>
         </div>
     `;
